@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background-color: #EEEDE8;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+body {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+a, a:link, a:visited {
+    color: black;
+}
+a.cta {
+    background-color: black;
+    border-radius: 10px;
+    color: #EEEDE8;
+    display: inline-block;
+    font-weight: 500;
+    padding: 1rem;
+    text-decoration: none;
+}
+a.cta.alt {
+    background-color: transparent;
+    border: 1px solid currentColor;
+    color: black;
+}
+header {
+    display: flex;
+    padding: 3rem 0;
+}
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+header nav {
+    margin-left: auto;
+}
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header nav img {
+    height: 1rem;
+    width: 1rem;
+}
+.wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+.full-width {
+    margin: 0;
+    width: 100%;
+}
+.full-width img {
+    width: 100%;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+.hero-grid h2 {
+    font-size: 4rem;
+}
+.hero-grid p {
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+.hero-grid a {
+    margin: 1rem 0 0;
+}
+.hero-grid figure {
+    margin: 0 0 2rem;
+}
+.quote-block {
+    background-color: black;
+    color: #EEEDE8;
+    width: 100%;
+}
+.quote-block blockquote {
+    font-size: 2rem;
+    font-style: italic;
+    padding: 6rem 0;
+    text-align: right;
+}
+.quote-block blockquote span {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.service-grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 2fr;
+    padding: 2rem 0;
+}
+.service-grid ul {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px;
+    list-style: none;
+}
+.service-grid ul li h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.service-grid ul li p {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+footer {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+footer p {
+    color: #333;
+}
+@media screen and (max-width: 1100px) {
+    .wrap {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        max-width: 100%;
+    }
+    .hero-grid h2 {
+        font-size: 3rem;
+    }
+    .hero-grid img {
+        width: 100%;
+    }
+    .service-grid {
+        display: block;
+    }
+    .quote-block blockquote,
+    .service-grid .primary {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    .hero-grid {
+        display: block;
+    }
+}
